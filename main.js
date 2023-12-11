@@ -32,6 +32,24 @@ const scrollRevealOption = {
         ScrollReveal().reveal(".action__btns", {
           ...scrollRevealOption,
           delay: 800,
-        });
+        }
+        );
+        document.getElementById('downloadButton').addEventListener('click',function(){
+          var downloadLink= document.createElement('a');
+          downloadLink.href='KrishnaResume.pdf.png';
+          downloadLink.download='Resume';
+          document.body.appendChild(downloadLink);
+          downloadLink.click();
+          document.body.removeChild(downloadLink);
+        })
+        document.getElementById('Contact').addEventListener('click', function() {
+          // Replace 'path/to/your/destination-page.html' with the correct path to your destination page
+          var destinationPage = 'contact.html';
+          
+          // Redirect to the destination page
+          window.location.href = destinationPage;
+      });
+
+        
 
         
