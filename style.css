@@ -548,7 +548,7 @@ img:hover{
   /* position: relative; */
   padding:1rem;
   top: 0px;
-  height: 172svh;
+  height: 180vh;
 
 }
 .test>div{
@@ -568,6 +568,40 @@ img:hover{
     transform: translateY(-20px);
     transition: transform 1s;
   }
+}
+@media screen and (max-width:391px){
+  .test__card {
+    overflow: auto;
+  }
+}
+@media screen and (max-width:355px){
+  .social_icons{
+     width:100vw; 
+  }
+  .social_icons div a{
+    display: inline-block;
+    font-size: 10px;
+    margin: 10px;
+  }
+  .test__grid{
+    transform: translateY(6rem);
+  }
+  .test__card:hover h1 {
+    text-shadow: yellow 1px 2px 15px;
+    transform: translateY(-20px); 
+    color: white;
+    font-size: 19px;
+  
+  }
+  /* .test{
+    height: 200vh;
+  }
+  .test__card{
+    font-size: 0px;
+  }
+  .test__card p{
+    font-size: 13px;
+  } */
 }
 
 
