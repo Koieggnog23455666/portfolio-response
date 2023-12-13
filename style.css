@@ -575,8 +575,10 @@ img:hover{
   }
 }
 @media screen and (max-width:355px){
-  .social_icons{
-     width:100vw; 
+  social_icons1{
+     width:30px; 
+     column-gap: 5px;
+     padding: 0;
   }
   .social_icons div a{
     display: inline-block;
@@ -591,7 +593,9 @@ img:hover{
     transform: translateY(-20px); 
     color: white;
     font-size: 19px;
-  
+  }
+  .nav__content{
+    padding: 0rem;
   }
   /* .test{
     height: 200vh;
