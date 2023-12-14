@@ -48,7 +48,7 @@ button {
 #name,
 #email {
     margin-bottom: 1em;
-    max-width: 250px;
+    max-width: 150px;
     left: 0;
     position: relative;
     justify-self: start;
@@ -67,7 +67,7 @@ button {
 
 form {
     justify-content: center;
-    margin: 1em;
+    margin: 2em;
     row-gap: 2px;
     column-gap: 2px;
     flex-basis: 300px;
