@@ -88,6 +88,7 @@ h1{
 
 }
 h2{
+    font-size: 30px;
     color: #077531;
 }
 input:focus{
@@ -199,5 +200,10 @@ body {
 @media (min-width:372px) {
     #phoneNumber {
         width: 160px;
+    }
+}
+@media (max-width:650px){
+    .inner{
+        width: 190px;
     }
 }
