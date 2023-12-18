@@ -4,55 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com">
+        module.exports = {
+            theme: {
+                screens: {
+                    'esm': { 'max': '639px' },
+                    'sm': '640px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '800px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                }
+            }
+        }
+    </script>
     <title>Document</title>
 </head>
 
 <body>
-    <h1>
-        <div class="hello">
-            <div class="h" id="H">H</div>
-            <div class="h" id="E">E</div>
-            <div class="h" id="L">L</div>
-            <div class="h" id="L2">L</div>
-            <div class="h" id="O">O</div>
+    <style>
+        * {
+            font-family: poppins;
+        }
+    </style>
+    <div class="text-center md:flex flex-wrap w-screen ">
+        <div class="bg-right  sm:w-screen sm:h-screen  flex  justify-center font-poppins bg-cover lg:bg-right  "
+            style="background-image: url('login\ background\ pic.jpg');">
+            <div class="sm:flex flex-row  gap-5 justify-items-center md:gap-11 w-auto">
+                <div class="flex flex-col ">
+
+                    <div class=" mt-6 sm:mt-20   flex flex-wrap justify-center"> <img class="w-[300px] h-[200px] rounded-full shadow-lg shadow-amber-500"
+                            src="zoro pic.webp" alt="profile_pic">
+
+                    </div>
+                    <div class=" sm: mt-5 ml-2 text-center text-3xl uppercase text-green-600 animate-bounce animate-once animate-duration-1000">
+                        Hello Buddy
+                    </div>
+                </div>
+                <div
+                    class=" h-[500px] w-[300px] esm:mt-2 mb-8 pt-3  mt-[100px] mx-4 rounded-3xl text-center text-green-600 flex-wrap flex-row justify-center align-middle transition ease-in-out hover:shadow-slate-600 hover:backdrop-blur-xl duration-1000 ">
+
+
+                    <div class="mx-0 sm:inner w-[300px]  ">
+                        <h2 class="mb-4 text-3xl uppercase w-[270px] ml-3  ">BETTER TOGETHER</h2>
+                        <form class="mx-0 text-center px-1" action="https://formsubmit.co/1a2a3e73d42982de31dd40bde58ee4cd" method="POST">
+                            <div class=" text-center w-52 mx-7 justify-items-center "><label for="name"></label>
+                                <input
+                                    class="bg-red-200  bg-opacity-70 text-black rounded-3xl placeholder-black mb-4 pl-2  focus:outline-none  "
+                                    type="text" id="name" name="name" placeholder="Name" required>
+                            </div>
+
+                            <div class="w-fit text-justify mx-7 "><label for="email"></label>
+                                <input
+                                    class="bg-red-200 bg-opacity-70 text-black rounded-3xl placeholder-black mb-4 pl-2 focus:outline-none "
+                                    type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="w-fit mx-7 "><label for="phoneNumber"> </label>
+                                <input
+                                    class="bg-red-200 bg-opacity-70 text-black rounded-3xl placeholder-black mb-4 pl-2 focus:outline-none"
+                                    type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    placeholder="123-456-7890" required>
+                            </div>
+                            <div class="w-[140px] mx-2"><textarea id="message"
+                                    class="bg-red-200 bg-opacity-70 resize-none text-black rounded-3xl placeholder-black mb-4 pl-2 pt-1 w-[270px] focus:outline-none"
+                                    name="message" placeholder="Write your thoughts ......"
+                                    style="height:170px "></textarea></div>
+
+                            <button
+                                class="rounded-3xl bg-indigo-600 border-solid px-7 hover:text-emerald-800 hover:bg-gradient-to-r from-green-500 to-yellow-400  "
+                                type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
-        <div class="buddy">
-            <div class="B">B</div>
-            <div class="U">U</div>
-            <div class="D">D</div>
-            <div class="D2">D</div>
-            <div class="Y">Y</div>
-        </div>
-
-
-    </h1>
-    <div class="inner">
-        <h2>BETTER TOGETHER</h2>
-        <form action="https://formsubmit.co/1a2a3e73d42982de31dd40bde58ee4cd" method="POST">
-            <div><label for="name"></label>
-                <input type="text" id="name" name="name" placeholder="Name" required>
-            </div>
-
-            <div><label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-            </div>
-            <div><label for="phoneNumber"> </label>
-                <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    placeholder="123-456-7890" required>
-            </div>
-            <div><textarea id="message" name="message" placeholder="Write your thoughts"
-                    style="height:170px "></textarea></div>
-
-            <button type="submit">Submit</button>
-        </form>
     </div>
-<!-- <script src="main2.js"></script> -->
+
+
+
+
+    <!-- <script src="main2.js"></script> -->
 </body>
 
 </html>
