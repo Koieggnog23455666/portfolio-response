@@ -47,27 +47,28 @@
             font-family: poppins;
         }
     </style>
-    <div class="text-center md:flex flex-wrap w-screen ">
-        <div class="bg-right  sm:w-screen sm:h-screen  flex  justify-center font-poppins bg-cover lg:bg-right  "
+    <div class="text-center md:flex  flex-wrap w-screen  ">
+        <div class="bg-right  sm:w-screen sm:h-screen  flex  justify-center backdrop:filter backdrop-blur-3xl font-poppins bg-cover lg:bg-right  "
             style="background-image: url('login\ background\ pic.jpg');">
             <div class="sm:flex flex-row  gap-5 justify-items-center md:gap-11 w-auto">
                 <div class="flex flex-col w-[200px] ml-9 sm:ml-16 ">
 
-                    <div class=" mt-6 sm:mt-20   flex flex-wrap justify-center"> <img class="w-[300px] h-[200px] rounded-full sm:rounded-3xl shadow-lg shadow-amber-500"
-                            src="zoro pic.webp" alt="profile_pic">
+                    <div class=" mt-6 sm:mt-20 rounded-full sm:rounded-br-3xl sm:rounded-md flex flex-wrap justify-center overflow-hidden" id="touch"> <img class=""
+                    ><img class="w-[300px] h-[200px]  shadow-lg shadow-amber-500   transition ease-in-out delay-200  hover:-translate-y-1 hover:scale-125 duration-1000" id="touch" src="zoro pic.webp" alt="profile_pic">
 
                     </div>
-                    <div class=" sm: mt-[100px]  text-center text-3xl uppercase text-green-600 animate-bounce animate-once animate-duration-1000">
+                    <label for="touch"></label>
+                    <div class=" sm: mt-[100px]  text-center text-3xl uppercase text-cyan-300 animate-bounce animate-once animate-duration-1000">
                         Hello Buddy
                     </div>
                 </div>
                 <div
-                    class=" h-[500px] w-[290px]  mb-8 pt-3  mt-[100px] mx-0 sm:mx-4 rounded-3xl text-center text-green-600 flex-wrap flex-row justify-center align-middle transition ease-in-out hover:shadow-slate-600 hover:backdrop-blur-xl duration-1000 ">
+                    class=" h-[500px] w-[290px]  mb-8 pt-3  mt-[100px] mx-0 sm:mx-4 rounded-3xl text-center text-green-600 flex-wrap flex-row justify-center align-middle transition ease-in-out hover:shadow-slate-600 hover:backdrop-blur-xl hover:bg-ac  duration-1000 " id="touch">
 
 
                     <div class="mx-0 sm:inner w-[250px]  ">
-                        <h2 class="mb-4 text-3xl uppercase w-[250px] ml-3  ">BETTER TOGETHER</h2>
-                        <form class=" text-center px-1" action="https://formsubmit.co/1a2a3e73d42982de31dd40bde58ee4cd" method="POST">
+                        <h2 class="mb-4 text-3xl uppercase w-[250px] ml-3 text-cyan-300  ">BETTER TOGETHER</h2>
+                        <form class=" text-center px-1" action="https://formsubmit.co/1a2a3e73d42982de31dd40bde58ee4cd" id="touch" method="POST">
                             <div class=" w-[38px] mx-16 "><label for="name"></label>
                                 <input
                                     class="bg-red-200  bg-opacity-70 text-black rounded-3xl placeholder-black mb-4 pl-2 w-[150px] focus:outline-none  "
@@ -90,7 +91,7 @@
                                     style="height:170px "></textarea></div>
 
                             <button
-                                class="rounded-3xl ml-10 bg-indigo-600 border-solid px-7 hover:text-emerald-800 hover:bg-gradient-to-r from-green-500 to-yellow-400  "
+                                class="rounded-3xl ml-10 bg-indigo-600 border-solid px-7 hover:text-zinc-700 hover:bg-gradient-to-r from-green-500 to-yellow-400  "
                                 type="submit">Submit</button>
                         </form>
                     </div>
