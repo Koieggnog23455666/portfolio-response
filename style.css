@@ -406,6 +406,9 @@ ul li a {
   font-size: 29px;
 
 }
+.test__grid:hover > :not(:hover){
+  opacity: .4;
+}
 .test__card h1{
   transition: transform 0.6s;
 }

@@ -3,7 +3,7 @@
 //   height: "15 cm",
 
 // };
-document.write(dog.breed);
+// document.write(dog.breed);
 const scrollRevealOption = {
           distance: "50px",
           origin: "bottom",
